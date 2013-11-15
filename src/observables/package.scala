@@ -1,7 +1,5 @@
 package rx.lang.scala
 
-import rx.subscriptions.{BooleanSubscription, Subscriptions}
-import rx.util.functions.Action0
 
 /**
  * Contains special Observables.
