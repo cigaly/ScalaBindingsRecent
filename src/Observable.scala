@@ -107,6 +107,16 @@ trait Observable[+T]
   }
 
   /**
+   * $subscribeObserverMain
+   *
+   * @param observer $subscribeObserverParamObserver
+   * @return $subscribeAllReturn
+   */
+  def subscribe(observer: rx.Observer[T]): Subscription = {
+    asJavaObservable.subscribe(observer)
+  }
+
+  /**
    * $subscribeCallbacksMainNoNotifications
    *                                                               ``
    * @param onNext $subscribeCallbacksParamOnNext

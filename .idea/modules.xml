@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Interop/Interop.iml" filepath="$PROJECT_DIR$/Interop/Interop.iml" />
       <module fileurl="file://$PROJECT_DIR$/ScalaBindingsRecent.iml" filepath="$PROJECT_DIR$/ScalaBindingsRecent.iml" />
     </modules>
   </component>

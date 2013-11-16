@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2783c6d2-7f66-4976-beae-2ac6d06e21ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/ScalaBindingsRecent_jar.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/artifacts/ScalaBindingsRecent_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ScalaBindings_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interop/Interop.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Interop/src/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ScalaBindingsRecent.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.scala" afterPath="$PROJECT_DIR$/src/Main.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Observable.scala" afterPath="$PROJECT_DIR$/src/Observable.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ScalaBindingsRecent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -13,8 +18,8 @@
     <file path="/ImplicitFunctionConversions.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384633858192" ignored="false" />
     <file path="/WithFilter.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384564887938" ignored="false" />
     <file path="/package.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384441902871" ignored="false" />
-    <file path="/Observable.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384569096244" ignored="false" />
-    <file path="/fragment.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384632544261" ignored="false" />
+    <file path="/Observable.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384640218016" ignored="false" />
+    <file path="/fragment.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384640587134" ignored="false" />
     <file path="/Observer.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384565785061" ignored="false" />
     <file path="/AsyncSubject.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384528761633" ignored="false" />
     <file path="/ReplaySubject.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384567631527" ignored="false" />
@@ -45,7 +50,7 @@
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/util/functions/Func1.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationFilter.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationScan.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
-    <file path="/Dummy.txt" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384634061677" ignored="false" />
+    <file path="/Dummy.txt" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384640471593" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Main.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384633053101" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Coin.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278743929" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Treasure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278788253" ignored="false" />
@@ -92,8 +97,8 @@
     <file path="$PROJECT_DIR$/../RxJavaFork/language-adaptors/rxjava-scala/build/libs/rxjava-scala-0.14.11-SNAPSHOT.jar!/rx/lang/scala/package.class" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384583268129" ignored="false" />
     <file path="/Subscriptions.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384529481343" ignored="false" />
     <file path="/Subjects.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384538705517" ignored="false" />
-    <file path="$PROJECT_DIR$/../Hello Java/src/Hello.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384631221248" ignored="false" />
-    <file path="/Hello.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384631213260" ignored="false" />
+    <file path="$PROJECT_DIR$/../Hello Java/src/Hello.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384640141954" ignored="false" />
+    <file path="/Hello.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384639917146" ignored="false" />
     <file path="/README" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384567226222" ignored="false" />
     <file path="/UnitTestSuite.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384635082151" ignored="false" />
     <file path="/SubscriptionTests.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384634900215" ignored="false" />
@@ -105,6 +110,7 @@
     <file path="/MovieLibUsage.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384628234655" ignored="false" />
     <file path="$PROJECT_DIR$/../Movies/src/Main.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384628898088" ignored="false" />
     <file path="/a.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384633698727" ignored="false" />
+    <file path="/Main.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384640438634" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,11 +171,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="46" selection-start="251" selection-end="251" vertical-scroll-proportion="0.16962843">
+            <state line="11" column="10" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observable.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Observable.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="115" column="39" selection-start="4367" selection-end="4367" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Interop/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="53" selection-start="349" selection-end="349" vertical-scroll-proportion="0.2907916">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -204,7 +230,7 @@
       <file leaf-file-name="modules.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -223,17 +249,6 @@
         <entry file="file://$PROJECT_DIR$/tests/SubscriptionTests.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state line="87" column="36" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BooleanSubscription.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/subscriptions/BooleanSubscription.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="50" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -271,8 +286,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Observable.scala" />
-        <option value="$PROJECT_DIR$/tests/examples/RxJavaDemos.scala" />
         <option value="$PROJECT_DIR$/src/Scheduler.scala" />
         <option value="$PROJECT_DIR$/src/Observer.scala" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -287,6 +300,8 @@
         <option value="$PROJECT_DIR$/tests/SubscriptionTests.scala" />
         <option value="$PROJECT_DIR$/tests/UnitTestSuite.scala" />
         <option value="$PROJECT_DIR$/src/Main.scala" />
+        <option value="$PROJECT_DIR$/src/Observable.scala" />
+        <option value="$PROJECT_DIR$/Interop/src/Main.java" />
       </list>
     </option>
   </component>
@@ -314,7 +329,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -329,6 +344,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -397,34 +414,83 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Observable.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="editor.preferences.completion" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/test/ScalaBindingsRecent/rx/lang/scala/examples" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/ScalaBindingsRecent_jar/ScalaBindingsRecent.jar!/" />
     <property name="project.structure.side.proportion" value="0.29088783" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
-    <property name="Repository.Attach.Sources" value="true" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -435,15 +501,15 @@
       <recent name="subjects" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Interop">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -499,12 +565,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -513,25 +573,18 @@
       <option name="testName" />
       <method />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -560,6 +613,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -598,6 +664,15 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="true" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="consoleargs" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <method />
+    </configuration>
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <extension name="scalaCoverage" />
@@ -613,19 +688,28 @@
       <setting name="showProgressMessages" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+    <configuration default="false" name="Interop" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Interop" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.All in ScalaBindingsRecent" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UnitTestSuite" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Application.Interop" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in ScalaBindingsRecent" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UnitTestSuite" />
     </list>
     <recent_temporary>
       <list size="3">
@@ -730,12 +814,16 @@
       <created>1384634070377</created>
       <updated>1384634070377</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added more orphan files">
+      <created>1384635107340</created>
+      <updated>1384635107340</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="22" width="1920" height="1178" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -751,8 +839,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20989583" sideWeight="0.5974146" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40258542" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11145833" sideWeight="0.5974146" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40258542" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33271548" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -844,11 +932,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/scala_settings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -868,18 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="7" selection-start="705" selection-end="705" vertical-scroll-proportion="0.101626016">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Observable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1827" column="7" selection-start="87656" selection-end="87656" vertical-scroll-proportion="-3.9785407">
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#619#649#0" expanded="false" />
-            <element signature="e#3253#3280#0" expanded="false" />
-            <element signature="e#87671#87711#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -920,7 +991,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
+        <state line="4" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -935,9 +1006,7 @@
     <entry file="file://$PROJECT_DIR$/tests/SubscriptionTests.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="36" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -950,8 +1019,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="46" selection-start="251" selection-end="251" vertical-scroll-proportion="0.16962843">
+        <state line="11" column="10" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Observable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="39" selection-start="4367" selection-end="4367" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interop/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="53" selection-start="349" selection-end="349" vertical-scroll-proportion="0.2907916">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,7 +1095,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Scala|ScalaBindingsRecent</last-edited>
+          <last-edited>Interop</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1034,7 +1119,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>com.netflix.rxjava:rxjava-core:0.14.11</last-edited>
+          <last-edited>ScalaBindingsRecent</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

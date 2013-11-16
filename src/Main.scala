@@ -4,7 +4,8 @@ object Main {
     import rx.lang.scala
 
     val lib = new rx.lang.scala.examples.MovieLib(
-      rx.lang.scala.Observable(new rx.lang.scala.examples.Movie(3000),
+      rx.lang.scala.Observable(
+        new rx.lang.scala.examples.Movie(3000),
         new rx.lang.scala.examples.Movie(1000),
         new rx.lang.scala.examples.Movie(2000)))
 

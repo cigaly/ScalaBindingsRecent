@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ScalaBindingsRecent">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/ScalaBindingsRecent_jar/ScalaBindingsRecent.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
