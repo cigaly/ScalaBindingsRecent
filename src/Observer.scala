@@ -11,9 +11,9 @@ trait Observer[-T] {
 }
 
 object Observer {
-  def apply[T](inner: rx.Observer[T]) : Observer[T] = {
+  def apply[T](observer: rx.Observer[T]) : Observer[T] = {
     new Observer[T]() {
-      def asJavaObserver: rx.Observer[_ >: T] = inner
+      def asJavaObserver: rx.Observer[_ >: T] = observer
     }
   }
 }

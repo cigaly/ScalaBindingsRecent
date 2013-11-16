@@ -29,6 +29,7 @@ package rx.lang.scala.subscriptions {
 
 import rx.lang.scala.Subscription
 
+
 object Subscription {
 
   /**
@@ -43,8 +44,8 @@ object Subscription {
   /**
    * Creates an [[rx.lang.scala.Subscription]] that invokes the specified action when unsubscribed.
    */
-  def apply(unsubscribe: => Unit): Subscription = {
-    new Subscription() {
+  def apply(unsubscribe: => Unit): rx.lang.scala.Subscription  = {
+    new Subscription () {
 
       private def u = ()=>unsubscribe
 

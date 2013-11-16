@@ -34,7 +34,7 @@ object ImplicitFunctionConversions {
   implicit def schedulerActionToFunc2[T](action: (Scheduler, T) => Subscription) =
     new Func2[rx.Scheduler, T, rx.Subscription] {
       def call(s: rx.Scheduler, t: T): rx.Subscription = {
-        action(s, t)
+        action(s, t).asJavaSubscription
       }
     }
 

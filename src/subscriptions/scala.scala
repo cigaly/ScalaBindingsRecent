@@ -2,8 +2,6 @@ package rx.lang
 
 package object scala {
 
-
-
   /**
    * Allows to construct observables in a similar way as futures.
    *
