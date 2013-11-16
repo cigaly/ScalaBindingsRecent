@@ -161,11 +161,11 @@ trait Scheduler {
   }
 
   def scheduleRec(work: (=>Unit)=>Unit): Subscription = {
-    asJavaScheduler.schedule(new Action1[Action0] {
+    Subscription(asJavaScheduler.schedule(new Action1[Action0] {
       def call(t1: Action0){
         work{ t1 }
       }
-    })
+    }))
     //action1[action0]
 
 //    val subscription = new rx.subscriptions.MultipleAssignmentSubscription()

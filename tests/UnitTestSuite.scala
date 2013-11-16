@@ -1,14 +1,14 @@
-//import java.lang.String
-//import scala.Predef.String
-//
-///**
-// * Created with IntelliJ IDEA.
-// * User: netflix
-// * Date: 11/10/13
-// * Time: 3:46 PM
-// * To change this template use File | Settings | File Templates.
-// */
-//private[scala] class UnitTestSuite extends org.scalatest.junit.JUnitSuite {
+import java.lang.String
+import org.junit.Assert
+import org.junit.Test
+import org.scalatest.junit.JUnitSuite
+import rx.lang.scala.subscriptions.Subscription
+import scala.Predef.String
+
+
+
+class UnitTestSuite extends JUnitSuite {
+
 //  import scala.concurrent.duration._
 //
 //  // Tests which needn't be run:
@@ -88,4 +88,4 @@
 //    println("This UnitTestSuite.testTest() for rx.lang.scala.Observable")
 //  }
 //
-//}
+}

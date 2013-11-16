@@ -44,16 +44,14 @@ object Subscription {
   /**
    * Creates an [[rx.lang.scala.Subscription]] that invokes the specified action when unsubscribed.
    */
-  def apply(unsubscribe: => Unit): rx.lang.scala.Subscription  = {
+  def apply(u: => Unit): rx.lang.scala.Subscription  = {
     new Subscription () {
-
-      private def u = ()=>unsubscribe()
 
       def isUnsubscribed = asJavaSubscription.isUnsubscribed
 
       val asJavaSubscription = new rx.subscriptions.BooleanSubscription() {
         override def unsubscribe() {
-          u()
+          u
           super.unsubscribe()
         }
       }
