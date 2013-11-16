@@ -26,7 +26,7 @@ object MultiAssignmentSubscription {
 /**
  * Represents a [[rx.lang.scala.subscriptions.Subscription]] whose underlying subscription can be swapped for another subscription.
  */
-class MultiAssignmentSubscription private [scala] (val asJavaSubscription: rx.subscriptions.MultipleAssignmentSubscription)
+class MultiAssignmentSubscription private[scala] (val asJavaSubscription: rx.subscriptions.MultipleAssignmentSubscription)
   extends Subscription {
 
   /**

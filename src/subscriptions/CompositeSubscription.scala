@@ -22,7 +22,7 @@ object CompositeSubscription {
 /**
  * Represents a group of [[rx.lang.scala.Subscription]] that are disposed together.
  */
-class CompositeSubscription private [scala] (val asJavaSubscription: rx.subscriptions.CompositeSubscription)
+class CompositeSubscription private[scala] (val asJavaSubscription: rx.subscriptions.CompositeSubscription)
   extends Subscription
 {
   /**

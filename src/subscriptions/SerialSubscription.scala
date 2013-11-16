@@ -26,7 +26,7 @@ object SerialSubscription {
 /**
  * Represents a [[rx.lang.scala.Subscription]] that can be checked for status.
  */
-class SerialSubscription private [scala] (val asJavaSubscription: rx.subscriptions.SerialSubscription)
+class SerialSubscription private[scala] (val asJavaSubscription: rx.subscriptions.SerialSubscription)
   extends Subscription {
 
   private val _isUnsubscribed = new AtomicBoolean(false)

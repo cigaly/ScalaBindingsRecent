@@ -27,7 +27,7 @@ object BooleanSubscription {
 /**
  * Represents a [[rx.lang.scala.Subscription]] that can be checked for status.
  */
-class BooleanSubscription private [scala] (val asJavaSubscription: rx.subscriptions.BooleanSubscription)
+class BooleanSubscription private[scala] (val asJavaSubscription: rx.subscriptions.BooleanSubscription)
   extends Subscription {
 
   /**
