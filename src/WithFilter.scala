@@ -12,7 +12,7 @@ private[scala] class WithFilter[+T] (p: T => Boolean, asJava: rx.Observable[_ <:
   }
 
   def flatMap[B](f: T => Observable[B]): Observable[B] = {
-    Observable[B](asJava.filter(p).flatMap[B]((x: T) => f(x).asJava))
+    Observable[B](asJava.filter(p).flatMap[B]((x: T) => f(x).asJavaObservable))
   }
 
   def withFilter(q: T => Boolean): Observable[T] = {

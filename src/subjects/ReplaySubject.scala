@@ -8,7 +8,7 @@ object ReplaySubject {
   }
 }
 
-class ReplaySubject[T] private (val inner: rx.subjects.ReplaySubject[T]) extends Subject[T,T]  {
+class ReplaySubject[T] private (val asJavaSubject: rx.subjects.ReplaySubject[T]) extends Subject[T,T]  {
 }
 
 

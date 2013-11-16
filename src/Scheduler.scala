@@ -1,7 +1,6 @@
 package rx.lang.scala
 
 import java.util.Date
-
 import scala.concurrent.duration.Duration
 import scala.language.postfixOps
 import ImplicitFunctionConversions.scalaFunction0ProducingUnitToAction0
@@ -13,7 +12,7 @@ import rx.lang.scala.subscriptions.Subscription
  * Represents an object that schedules units of work.
  */
 trait Scheduler {
-  def asJava: rx.Scheduler
+  def asJavaScheduler: rx.Scheduler
 
   /**
    * Schedules a cancelable action to be executed.
@@ -33,7 +32,7 @@ trait Scheduler {
    * @return a subscription to be able to unsubscribe from action.
    */
   private def schedule[T](state: T, action: (Scheduler, T) => Subscription): Subscription = {
-    Subscription(asJava.schedule(state, new Func2[rx.Scheduler, T, rx.Subscription] {
+    Subscription(asJavaScheduler.schedule(state, new Func2[rx.Scheduler, T, rx.Subscription] {
       def call(t1: rx.Scheduler, t2: T): rx.Subscription = {
         action(Scheduler(t1), t2).asJavaSubscription
       }
@@ -65,7 +64,7 @@ trait Scheduler {
    * @return a subscription to be able to unsubscribe from action.
    */
   private def schedule[T](state: T, action: (Scheduler, T) => Subscription, delayTime: Duration): Subscription = {
-    Subscription(asJava.schedule(state, action, delayTime.length, delayTime.unit))
+    Subscription(asJavaScheduler.schedule(state, action, delayTime.length, delayTime.unit))
   }
 
   /**
@@ -98,7 +97,7 @@ trait Scheduler {
    * @return A subscription to be able to unsubscribe from action.
    */
   private def schedulePeriodically[T](state: T, action: (Scheduler, T) => Subscription, initialDelay: Duration, period: Duration): Subscription = {
-    Subscription(asJava.schedulePeriodically(state, action, initialDelay.length, initialDelay.unit.convert(period.length, period.unit), initialDelay.unit))
+    Subscription(asJavaScheduler.schedulePeriodically(state, action, initialDelay.length, initialDelay.unit.convert(period.length, period.unit), initialDelay.unit))
   }
 
   /**
@@ -124,7 +123,7 @@ trait Scheduler {
    * @return a subscription to be able to unsubscribe from action.
    */
   private def schedule[T](state: T, action: (Scheduler, T) => Subscription, dueTime: Date): Subscription = {
-    Subscription(asJava.schedule(state, action, dueTime))
+    Subscription(asJavaScheduler.schedule(state, action, dueTime))
   }
 
   /**
@@ -135,7 +134,7 @@ trait Scheduler {
    * @return a subscription to be able to unsubscribe from action.
    */
   def schedule(action: =>Unit): Subscription = {
-    Subscription(asJava.schedule(()=>action))
+    Subscription(asJavaScheduler.schedule(()=>action))
   }
 
   /**
@@ -145,7 +144,7 @@ trait Scheduler {
    * @return a subscription to be able to unsubscribe from action.
    */
   def schedule(delayTime: Duration)(action: =>Unit): Subscription = {
-    Subscription(asJava.schedule(()=>action, delayTime.length, delayTime.unit))
+    Subscription(asJavaScheduler.schedule(()=>action, delayTime.length, delayTime.unit))
   }
 
   /**
@@ -160,11 +159,11 @@ trait Scheduler {
    * @return A subscription to be able to unsubscribe from action.
    */
   def schedule(initialDelay: Duration, period: Duration)(action: =>Unit): Subscription = {
-    Subscription(asJava.schedulePeriodically(()=>action, initialDelay.length, initialDelay.unit.convert(period.length, period.unit), initialDelay.unit))
+    Subscription(asJavaScheduler.schedulePeriodically(()=>action, initialDelay.length, initialDelay.unit.convert(period.length, period.unit), initialDelay.unit))
   }
 
   def scheduleRec(work: (=>Unit)=>Unit): Subscription = {
-    asJava.schedule(new Action1[Action0] {
+    asJavaScheduler.schedule(new Action1[Action0] {
       def call(t1: Action0){
         work{ t1 }
       }
@@ -187,7 +186,7 @@ trait Scheduler {
    * Returns the scheduler's notion of current absolute time in milliseconds.
    */
   def now: Long = {
-    asJava.now
+    asJavaScheduler.now
   }
 
   /**
@@ -198,7 +197,7 @@ trait Scheduler {
    * @return the scheduler's available degree of parallelism.
    */
   def degreeOfParallelism: Int = {
-    asJava.degreeOfParallelism
+    asJavaScheduler.degreeOfParallelism
   }
 
 }
@@ -207,7 +206,7 @@ trait Scheduler {
  * Provides constructors for Schedulers.
  */
 object Scheduler {
-  private class WrapJavaScheduler(val asJava: rx.Scheduler) extends Scheduler
+  private class WrapJavaScheduler(val asJavaScheduler: rx.Scheduler) extends Scheduler
   
   /**
    * Constructs a Scala Scheduler from a Java Scheduler.

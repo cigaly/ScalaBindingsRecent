@@ -42,18 +42,18 @@ import rx.lang.scala.Scheduler
  * }}}
  */
 class TestScheduler extends Scheduler {
-  val asJava = new rx.concurrency.TestScheduler
+  val asJavaScheduler = new rx.concurrency.TestScheduler
 
   def advanceTimeBy(time: Duration) {
-    asJava.advanceTimeBy(time.length, time.unit)
+    asJavaScheduler.advanceTimeBy(time.length, time.unit)
   }
 
   def advanceTimeTo(time: Duration) {
-    asJava.advanceTimeTo(time.length, time.unit)
+    asJavaScheduler.advanceTimeTo(time.length, time.unit)
   }
 
   def triggerActions() {
-    asJava.triggerActions()
+    asJavaScheduler.triggerActions()
   }
 }
 

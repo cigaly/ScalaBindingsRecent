@@ -8,5 +8,5 @@ object PublishSubject {
   }
 }
 
-class PublishSubject[T] private (val inner: rx.subjects.PublishSubject[T]) extends Subject[T,T]  {
+class PublishSubject[T] private (val asJavaSubject: rx.subjects.PublishSubject[T]) extends Subject[T,T]  {
  }

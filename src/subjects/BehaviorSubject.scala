@@ -8,7 +8,7 @@ object BehaviorSubject {
   }
 }
 
-class BehaviorSubject[T] private (val inner: rx.subjects.BehaviorSubject[T]) extends Subject[T,T]  {
+class BehaviorSubject[T] private (val asJavaSubject: rx.subjects.BehaviorSubject[T]) extends Subject[T,T]  {
 }
 
 
