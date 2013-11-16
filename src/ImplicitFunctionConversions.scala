@@ -43,6 +43,12 @@ object ImplicitFunctionConversions {
 
   implicit def scalaSchedulerToJavaScheduler(s: Scheduler): rx.Scheduler = s.asJavaScheduler
   implicit def javaSchedulerToScalaScheduler(s: rx.Scheduler): Scheduler = Scheduler(s)
+
+  implicit def scalaObserverToJavaObserver[T](s: Observer[T]): rx.Observer[_ >: T] = s.asJavaObserver
+  implicit def javaObserverToScalaSObserver[T](s: rx.Observer[T]): Observer[T] = Observer(s)
+
+  implicit def scalaObservableToJavaObservable[T](s: Observable[T]): rx.Observable[_ <: T] = s.asJavaObservable
+  implicit def javaObservableToScalaSObservable[T](s: rx.Observable[T]): Observable[T] = Observable(s)
   
   implicit def scalaFunction1ToOnSubscribeFunc[T](f: rx.lang.scala.Observer[T] => Subscription) =
     new rx.Observable.OnSubscribeFunc[T] {

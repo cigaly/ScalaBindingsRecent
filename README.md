@@ -119,7 +119,6 @@ trait Notification[+T] {
 
 object Subscription {…}
 trait Subscription {
-
    def asJavaSubscription: rx.Subscription
 }
 ```
@@ -133,3 +132,11 @@ public void test() {
    lib.longMovies().asJavaObservable().subscribe(moviePrinter);
 }
 ```
+Delegation versus Inheritance
+-----------------------------
+The obvious thought is that using delegation instead of inheritance (http://c2.com/cgi/wiki?DelegationIsInheritance)
+will lead to excessive wrapping, since all Scala types wrap and delegate to an underlying RxJava implementation.
+Note however, that the wrapping happens at query generation time and incurs no overhead when messages are flowing
+through the pipeline. Say we have a query `xs.map(f).filter(p).subscribe(o)`. Even though the Scala types are wrappers,
+the callback that is registered with xs is something like `x => { val y = f(x); if(p(y)){ o.asJavaObserver.onNext(y) }}`
+and hence there is no additional runtime penalty.

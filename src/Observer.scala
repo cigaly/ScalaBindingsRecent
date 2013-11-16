@@ -4,9 +4,9 @@ trait Observer[-T] {
 
   def asJavaObserver: rx.Observer[_ >: T]
 
-  def onNext(value: T): Unit = asJavaObserver.onNext(value)
+  def onNext(value: T): Unit          = asJavaObserver.onNext(value)
   def onError(error: Throwable): Unit = asJavaObserver.onError(error)
-  def onCompleted(): Unit = asJavaObserver.onCompleted()
+  def onCompleted(): Unit             = asJavaObserver.onCompleted()
 
 }
 
