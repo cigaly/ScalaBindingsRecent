@@ -1888,7 +1888,7 @@ object Observable {
    */
   def apply[T](func: Observer[T] => Subscription): Observable[T] = {
     Observable[T](rx.Observable.create(new OnSubscribeFunc[T] {
-      def onSubscribe(t1: rx.Observer[_ >: T]): Subscription = {
+      def onSubscribe(t1: rx.Observer[_ >: T]): rx.Subscription = {
         func(Observer(t1))
       }
     }))

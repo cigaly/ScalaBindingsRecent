@@ -2,7 +2,7 @@ package rx.lang
 
 package object scala {
 
-  type Subscription = rx.Subscription
+
 
   /**
    * Allows to construct observables in a similar way as futures.

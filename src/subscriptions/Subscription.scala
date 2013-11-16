@@ -14,23 +14,53 @@
  * limitations under the License.
  */
 
-package rx.lang.scala.subscriptions
+package rx.lang.scala {
 
-import rx.lang.scala.{Observable, Scheduler}
-import rx.subscriptions.Subscriptions
-import rx.util.functions.Action0
-import rx.lang.scala.{Observable, Scheduler, Subscription}
+  trait Subscription {
+
+    val asJavaSubscription: rx.Subscription
+
+    def unsubscribe(): Unit = asJavaSubscription.unsubscribe()
+    def isUnsubscribed: Boolean
+  }
+}
+
+package rx.lang.scala.subscriptions {
+
+import rx.lang.scala.Subscription
 
 object Subscription {
 
-    /**
-     * Creates an [[rx.lang.scala.Subscription]] that invokes the specified action when unsubscribed.
-     */
-    def apply(unsubscribe: => Unit) : Subscription = {
-      Subscriptions.create(new Action0(){ def call() { unsubscribe } })
+  /**
+   * Creates an [[rx.lang.scala.Subscription]] from an[[rx.Subscription]].
+   */
+  def apply(subscription: rx.Subscription): Subscription = {
+     Subscription {
+      subscription.unsubscribe()
     }
+  }
 
- }
+  /**
+   * Creates an [[rx.lang.scala.Subscription]] that invokes the specified action when unsubscribed.
+   */
+  def apply(unsubscribe: => Unit): Subscription = {
+    new Subscription() {
+
+      private def u = ()=>unsubscribe
+
+      def isUnsubscribed = asJavaSubscription.isUnsubscribed
+
+      val asJavaSubscription = new rx.subscriptions.BooleanSubscription() {
+        override def unsubscribe() {
+          u()
+          super.unsubscribe()
+        }
+      }
+    }
+  }
+
+}
+}
 
 
 

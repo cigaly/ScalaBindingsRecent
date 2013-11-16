@@ -20,6 +20,7 @@ import java.{ lang => jlang }
 import rx.lang.scala._
 import rx.util.functions._
 import scala.collection.Seq
+import rx.lang.scala.subscriptions.Subscription
 
 /**
  * These function conversions convert between Scala functions and Rx `Func`s and `Action`s.
@@ -31,14 +32,16 @@ object ImplicitFunctionConversions {
   import language.implicitConversions
 
   implicit def schedulerActionToFunc2[T](action: (Scheduler, T) => Subscription) =
-    new Func2[rx.Scheduler, T, Subscription] {
-      def call(s: rx.Scheduler, t: T): Subscription = {
+    new Func2[rx.Scheduler, T, rx.Subscription] {
+      def call(s: rx.Scheduler, t: T): rx.Subscription = {
         action(s, t)
       }
-    }  
-  
+    }
+
+  implicit def scalaSubscriptionToJavaSubscription(s: Subscription): rx.Subscription = s.asJavaSubscription
+  implicit def javaSubscriptionToScalaSubscription(s: rx.Subscription): Subscription = Subscription(s)
+
   implicit def scalaSchedulerToJavaScheduler(s: Scheduler): rx.Scheduler = s.asJava
-  
   implicit def javaSchedulerToScalaScheduler(s: rx.Scheduler): Scheduler = Scheduler(s)
   
   implicit def scalaFunction1ToOnSubscribeFunc[T](f: rx.lang.scala.Observer[T] => Subscription) =

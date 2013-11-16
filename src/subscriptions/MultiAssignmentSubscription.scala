@@ -26,34 +26,29 @@ object MultiAssignmentSubscription {
 /**
  * Represents a [[rx.lang.scala.subscriptions.Subscription]] whose underlying subscription can be swapped for another subscription.
  */
-class MultiAssignmentSubscription private [scala] (inner: rx.subscriptions.MultipleAssignmentSubscription)
+class MultiAssignmentSubscription private [scala] (val asJavaSubscription: rx.subscriptions.MultipleAssignmentSubscription)
   extends Subscription {
 
   /**
-   * Gets the underlying subscription
-   * @return the [[MultiAssignmentSubscription]] itself.
+   * Gets the underlying subscription.
    */
-  def subscription: Subscription = inner.getSubscription()
+  def subscription: Subscription = Subscription(asJavaSubscription.getSubscription())
 
   /**
    * Gets the underlying subscription
    * @param that the new subscription
-   * @return the [[MultiAssignmentSubscription]] itself.
+   * @return the [[rx.lang.scala.subscriptions.MultiAssignmentSubscription]] itself.
    */
   def subscription_=(that: Subscription): this.type = {
-    inner.setSubscription(that)
+    asJavaSubscription.setSubscription(that.asJavaSubscription)
     this
   }
 
   /**
    * Checks whether the subscription has been unsubscribed.
    */
-  def isUnsubscribed: Boolean = inner.isUnsubscribed()
+  def isUnsubscribed: Boolean = asJavaSubscription.isUnsubscribed()
 
-  /**
-   * Unsubscribes this subscription, setting isUnsubscribed to true.
-   */
-  def unsubscribe(): Unit = inner.unsubscribe()
 }
 
 

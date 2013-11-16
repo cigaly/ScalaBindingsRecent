@@ -6,6 +6,8 @@ import scala.concurrent.duration.Duration
 import scala.language.postfixOps
 import ImplicitFunctionConversions.scalaFunction0ProducingUnitToAction0
 import ImplicitFunctionConversions.schedulerActionToFunc2
+import rx.util.functions.{Action0, Action1, Func2}
+import rx.lang.scala.subscriptions.Subscription
 
 /**
  * Represents an object that schedules units of work.
@@ -30,8 +32,12 @@ trait Scheduler {
    * @param action Action to schedule.
    * @return a subscription to be able to unsubscribe from action.
    */
-  private def schedule[T](state: T, action: (rx.lang.scala.Scheduler, T) => Subscription): Subscription = {
-    asJava.schedule(state, action)
+  private def schedule[T](state: T, action: (Scheduler, T) => Subscription): Subscription = {
+    Subscription(asJava.schedule(state, new Func2[rx.Scheduler, T, rx.Subscription] {
+      def call(t1: rx.Scheduler, t2: T): rx.Subscription = {
+        action(Scheduler(t1), t2).asJavaSubscription
+      }
+    }))
   }
 
   /**
@@ -59,7 +65,7 @@ trait Scheduler {
    * @return a subscription to be able to unsubscribe from action.
    */
   private def schedule[T](state: T, action: (Scheduler, T) => Subscription, delayTime: Duration): Subscription = {
-    asJava.schedule(state, action, delayTime.length, delayTime.unit)
+    Subscription(asJava.schedule(state, action, delayTime.length, delayTime.unit))
   }
 
   /**
@@ -92,7 +98,7 @@ trait Scheduler {
    * @return A subscription to be able to unsubscribe from action.
    */
   private def schedulePeriodically[T](state: T, action: (Scheduler, T) => Subscription, initialDelay: Duration, period: Duration): Subscription = {
-    asJava.schedulePeriodically(state, action, initialDelay.length, initialDelay.unit.convert(period.length, period.unit), initialDelay.unit)
+    Subscription(asJava.schedulePeriodically(state, action, initialDelay.length, initialDelay.unit.convert(period.length, period.unit), initialDelay.unit))
   }
 
   /**
@@ -118,7 +124,7 @@ trait Scheduler {
    * @return a subscription to be able to unsubscribe from action.
    */
   private def schedule[T](state: T, action: (Scheduler, T) => Subscription, dueTime: Date): Subscription = {
-    asJava.schedule(state, action, dueTime)
+    Subscription(asJava.schedule(state, action, dueTime))
   }
 
   /**
@@ -129,7 +135,7 @@ trait Scheduler {
    * @return a subscription to be able to unsubscribe from action.
    */
   def schedule(action: =>Unit): Subscription = {
-    asJava.schedule(()=>action)
+    Subscription(asJava.schedule(()=>action))
   }
 
   /**
@@ -139,7 +145,7 @@ trait Scheduler {
    * @return a subscription to be able to unsubscribe from action.
    */
   def schedule(delayTime: Duration)(action: =>Unit): Subscription = {
-    asJava.schedule(()=>action, delayTime.length, delayTime.unit)
+    Subscription(asJava.schedule(()=>action, delayTime.length, delayTime.unit))
   }
 
   /**
@@ -154,20 +160,27 @@ trait Scheduler {
    * @return A subscription to be able to unsubscribe from action.
    */
   def schedule(initialDelay: Duration, period: Duration)(action: =>Unit): Subscription = {
-    asJava.schedulePeriodically(()=>action, initialDelay.length, initialDelay.unit.convert(period.length, period.unit), initialDelay.unit)
+    Subscription(asJava.schedulePeriodically(()=>action, initialDelay.length, initialDelay.unit.convert(period.length, period.unit), initialDelay.unit))
   }
 
   def scheduleRec(work: (=>Unit)=>Unit): Subscription = {
+    asJava.schedule(new Action1[Action0] {
+      def call(t1: Action0){
+        work{ t1 }
+      }
+    })
+    //action1[action0]
 
-    val subscription = new rx.subscriptions.MultipleAssignmentSubscription()
-
-    subscription.setSubscription(
-      this.schedule(scheduler => {
-        def loop(): Unit =  subscription.setSubscription(scheduler.schedule{ work{ loop() }})
-        loop()
-        subscription
-      }))
-    subscription
+//    val subscription = new rx.subscriptions.MultipleAssignmentSubscription()
+//
+//    subscription.setSubscription(
+//      this.schedule(scheduler => {
+//        def loop(): Unit =  subscription.setSubscription(scheduler.schedule{ work{ loop() }})
+//        loop()
+//        subscription
+//      }))
+//    subscription
+    ???
   }
 
   /**
