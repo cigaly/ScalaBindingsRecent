@@ -1,17 +1,11 @@
-import java.lang.String
 import org.junit.{Ignore, Assert, Test}
 import org.scalatest.junit.JUnitSuite
 import rx.lang.scala.Observable
-import rx.lang.scala.subscriptions.Subscription
 import scala.Predef.String
-
-
 
 class UnitTestSuite extends JUnitSuite {
 
- import scala.concurrent.duration._
-
- // Tests which needn't be run:
+  // Tests which needn't be run:
 
 @Ignore
 def testCovariance = {

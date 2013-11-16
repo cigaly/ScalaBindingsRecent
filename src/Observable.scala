@@ -771,7 +771,8 @@ trait Observable[+T]
   }
 
   /**
-   * Turns all of the notifications from a source Observable into [[rx.lang.scala.Observer.onNext onNext]] emissions, and marks them with their original notification types within [[rx.lang.scala.Notification]] objects.
+   * Turns all of the notifications from a source Observable into [[rx.lang.scala.Observer.onNext onNext]] emissions,
+   * and marks them with their original notification types within [[rx.lang.scala.Notification]] objects.
    *
    * <img width="640" src="https://raw.github.com/wiki/Netflix/RxJava/images/rx-operators/materialize.png">
    *
