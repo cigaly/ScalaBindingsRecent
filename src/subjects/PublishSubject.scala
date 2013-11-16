@@ -1,4 +1,4 @@
-package subjects
+package rx.lang.scala.subjects
 
 import rx.lang.scala.Subject
 
@@ -8,5 +8,5 @@ object PublishSubject {
   }
 }
 
-class PublishSubject[T] private (val asJavaSubject: rx.subjects.PublishSubject[T]) extends Subject[T,T]  {
+class PublishSubject[T] private[scala] (val asJavaSubject: rx.subjects.PublishSubject[T]) extends Subject[T,T]  {
  }
