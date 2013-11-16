@@ -67,6 +67,10 @@ object ImplicitFunctionConversions {
       def call(): Unit = f()
     }
 
+  implicit def Action1toScalaFunction1ProducingUnit[A](f: Action1[A]): (A=>Unit) = {
+    a => f(a)
+  }
+
   implicit def scalaFunction1ProducingUnitToAction1[A](f: (A => Unit)): Action1[A] =
     new Action1[A] {
       def call(a: A): Unit = f(a)

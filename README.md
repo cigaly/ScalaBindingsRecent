@@ -22,9 +22,7 @@ The technique used to obtain this transparency is to use a value class with a pr
 the Rx operators in an idiomatic Scala way, and a companion object that is used to construct instances in Scala
 ```scala
 object Observable {
-   def apply[T](asJava: rx.Observable[_ <: T]): Observable[T] = {
-       new Observable[T](asJava)
-   }
+   def apply[T](asJava: rx.Observable[_ <: T]): Observable[T] = { new Observable[T](asJava) }
 }
 
 class Observable[+T] private[scala] (val asJava: rx.Observable[_ <: T])  extends AnyVal {
