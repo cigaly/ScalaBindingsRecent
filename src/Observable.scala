@@ -24,7 +24,7 @@ import rx.Observable.OnSubscribeFunc
 /**
  * The Observable interface that implements the Reactive Pattern.
  *
- * @param asJava the underlying Java observable
+ * @param asJavaObservable the underlying Java observable
  *
  * @define subscribeObserverMain
  * Call this method to subscribe an [[rx.lang.scala.Observer]] for receiving 
@@ -249,8 +249,6 @@ trait Observable[+T]
    * its [[rx.lang.scala.Observer]]s; it invokes `onCompleted` or `onError` only once; and it never invokes `onNext` after invoking either `onCompleted` or `onError`.
    * `synchronize` enforces this, and the Observable it returns invokes `onNext` and `onCompleted` or `onError` synchronously.
    *
-   * @param observable
-   *            the source Observable
    * @return an Observable that is a chronologically well-behaved version of the source
    *         Observable, and that synchronously notifies its [[rx.lang.scala.Observer]]s
    */
@@ -267,7 +265,7 @@ trait Observable[+T]
    */
   def timestamp: Observable[(Long, T)] = {
     Observable[rx.util.Timestamped[_ <: T]](asJavaObservable.timestamp())
-      .map((t: rx.util.Timestamped[_ <: T]) => (t.getTimestampMillis, t.getValue()))
+      .map((t: rx.util.Timestamped[_ <: T]) => (t.getTimestampMillis, t.getValue))
   }
 
   /**
@@ -1068,10 +1066,7 @@ trait Observable[+T]
    *
    * <img width="640" src="https://github.com/Netflix/RxJava/wiki/images/rx-operators/sample.png">
    *
-   * @param period
-   *            the sampling rate
-   * @param unit
-   *            the [[TimeUnit]] in which `period` is defined
+   * @param duration the sampling rate
    * @return an Observable that emits the results of sampling the items emitted by the source
    *         Observable at the specified time interval
    */
@@ -1085,10 +1080,7 @@ trait Observable[+T]
    *
    * <img width="640" src="https://github.com/Netflix/RxJava/wiki/images/rx-operators/sample.png">
    *
-   * @param period
-   *            the sampling rate
-   * @param unit
-   *            the [[TimeUnit]] in which `period` is defined
+   * @param duration the sampling rate
    * @param scheduler
    *            the [[rx.lang.scala.Scheduler]] to use when sampling
    * @return an Observable that emits the results of sampling the items emitted by the source
@@ -1148,7 +1140,7 @@ trait Observable[+T]
    *
    * <img width="640" src="https://raw.github.com/wiki/Netflix/RxJava/images/rx-operators/skip.png">
    *
-   * @param num
+   * @param n
    *            the number of items to skip
    * @return an Observable that is identical to the source Observable except that it does not
    *         emit the first `num` items that the source emits
@@ -1182,7 +1174,7 @@ trait Observable[+T]
    * [[rx.lang.scala.Observer.onNext onNext]] function a maximum of `num` times before invoking
    * [[rx.lang.scala.Observer.onCompleted onCompleted]].
    *
-   * @param num
+   * @param n
    *            the number of items to take
    * @return an Observable that emits only the first `num` items from the source
    *         Observable, or all of the items from the source Observable if that Observable emits
@@ -1261,7 +1253,7 @@ trait Observable[+T]
    *         the source Observable.
    */
   def toSeq: Observable[Seq[T]] = {
-    Observable.jObsOfListToScObsOfSeq(asJavaObservable.toList())
+    Observable.jObsOfListToScObsOfSeq(asJavaObservable.toList)
       : Observable[Seq[T]] // SI-7818
   }
 
@@ -1277,7 +1269,7 @@ trait Observable[+T]
    */
   def groupBy[K](f: T => K): Observable[(K, Observable[T])] = {
     val o1 = asJavaObservable.groupBy[K](f) : rx.Observable[_ <: rx.observables.GroupedObservable[K, _ <: T]]
-    val func = (o: rx.observables.GroupedObservable[K, _ <: T]) => (o.getKey(), Observable[T](o))
+    val func = (o: rx.observables.GroupedObservable[K, _ <: T]) => (o.getKey, Observable[T](o))
     Observable[(K, Observable[T])](o1.map[(K, Observable[T])](func))
   }
 
@@ -1290,8 +1282,6 @@ trait Observable[+T]
    * This operation is only available if `this` is of type `Observable[Observable[U]]` for some `U`,
    * otherwise you'll get a compilation error.
    *
-   * @param sequenceOfSequences
-   *            the source Observable that emits Observables
    * @return an Observable that emits only the items emitted by the most recently published
    *         Observable
    *
@@ -1773,7 +1763,7 @@ trait Observable[+T]
    * @see <a href="https://github.com/Netflix/RxJava/wiki/Blocking-Observable-Operators">Blocking Observable Operators</a>
    */
   def toBlockingObservable: BlockingObservable[T] = {
-    new BlockingObservable[T](asJavaObservable.toBlockingObservable())
+    new BlockingObservable[T](asJavaObservable.toBlockingObservable)
   }
 
   /**
@@ -2036,7 +2026,7 @@ object Observable {
    * @return An Observable that emits a number each time interval.
    */
   def interval(duration: Duration): Observable[Long] = {
-    (Observable[java.lang.Long](rx.Observable.interval(duration.length, duration.unit))).map(_.longValue())
+    Observable[java.lang.Long](rx.Observable.interval(duration.length, duration.unit)).map(_.longValue())
     /*XXX*/
   }
 
@@ -2052,7 +2042,7 @@ object Observable {
    * @return An Observable that emits a number each time interval.
    */
   def interval(duration: Duration, scheduler: Scheduler): Observable[Long] = {
-    (Observable[java.lang.Long](rx.Observable.interval(duration.length, duration.unit, scheduler))).map(_.longValue())
+    Observable[java.lang.Long](rx.Observable.interval(duration.length, duration.unit, scheduler)).map(_.longValue())
     /*XXX*/
   }
 

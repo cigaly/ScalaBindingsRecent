@@ -49,6 +49,6 @@ class CompositeSubscription private[scala] (val asJavaSubscription: rx.subscript
   /**
    * Checks whether the subscription has been unsubscribed.
    */
-  def isUnsubscribed: Boolean = asJavaSubscription.isUnsubscribed()
+  def isUnsubscribed: Boolean = asJavaSubscription.isUnsubscribed
 
 }

@@ -32,7 +32,7 @@ class MultiAssignmentSubscription private[scala] (val asJavaSubscription: rx.sub
   /**
    * Gets the underlying subscription.
    */
-  def subscription: Subscription = Subscription(asJavaSubscription.getSubscription())
+  def subscription: Subscription = Subscription(asJavaSubscription.getSubscription)
 
   /**
    * Gets the underlying subscription
@@ -47,7 +47,7 @@ class MultiAssignmentSubscription private[scala] (val asJavaSubscription: rx.sub
   /**
    * Checks whether the subscription has been unsubscribed.
    */
-  def isUnsubscribed: Boolean = asJavaSubscription.isUnsubscribed()
+  def isUnsubscribed: Boolean = asJavaSubscription.isUnsubscribed
 
 }
 

@@ -47,7 +47,7 @@ object Subscription {
   def apply(unsubscribe: => Unit): rx.lang.scala.Subscription  = {
     new Subscription () {
 
-      private def u = ()=>unsubscribe
+      private def u = ()=>unsubscribe()
 
       def isUnsubscribed = asJavaSubscription.isUnsubscribed
 

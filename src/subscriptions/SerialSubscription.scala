@@ -42,7 +42,7 @@ class SerialSubscription private[scala] (val asJavaSubscription: rx.subscription
   override def unsubscribe(): Unit = { super.unsubscribe(); _isUnsubscribed.set(true) }
 
   def subscription_=(value: Subscription): Unit = asJavaSubscription.setSubscription(value.asJavaSubscription)
-  def subscription: Subscription = Subscription(asJavaSubscription.getSubscription())
+  def subscription: Subscription = Subscription(asJavaSubscription.getSubscription)
 
 }
 

@@ -59,8 +59,6 @@ trait Scheduler {
    *            Action to schedule.
    * @param delayTime
    *            Time the action is to be delayed before executing.
-   * @param unit
-   *            Time unit of the delay time.
    * @return a subscription to be able to unsubscribe from action.
    */
   private def schedule[T](state: T, action: (Scheduler, T) => Subscription, delayTime: Duration): Subscription = {
@@ -179,7 +177,6 @@ trait Scheduler {
 //        subscription
 //      }))
 //    subscription
-    ???
   }
 
   /**

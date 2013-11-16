@@ -43,12 +43,12 @@ object Notification {
   }
   
   class OnError[+T](val asJava: rx.Notification[_ <: T]) extends Notification[T] {
-    def error: Throwable = asJava.getThrowable()
+    def error: Throwable = asJava.getThrowable
   }
   
   object OnError {
     def unapply[U](n: Notification[U]): Option[Throwable] = n match {
-      case n2: OnError[U] => Some(n2.asJava.getThrowable())
+      case n2: OnError[U] => Some(n2.asJava.getThrowable)
       case _ => None
     }
   }

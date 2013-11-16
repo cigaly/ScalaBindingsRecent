@@ -45,7 +45,7 @@ class BlockingObservable[+T] private[scala] (val asJava: rx.observables.Blocking
    *             if an error occurs
    */
   def foreach(f: T => Unit): Unit = {
-    asJava.forEach(f);
+    asJava.forEach(f)
   }
   
   def withFilter(p: T => Boolean): WithFilter[T] = {
@@ -117,14 +117,14 @@ class BlockingObservable[+T] private[scala] (val asJava: rx.observables.Blocking
    * Returns an {@link Iterator} that iterates over all items emitted by this {@link Observable}.
    */
   def toIterable: Iterable[T] = {
-    asJava.toIterable().asScala: Iterable[T] // useless ascription because of compiler bug
+    asJava.toIterable.asScala: Iterable[T] // useless ascription because of compiler bug
   }
 
   /**
    * Returns a {@link List} that contains all items emitted by this {@link Observable}.
    */
   def toList: List[T] = {
-    asJava.toIterable().asScala.toList: List[T] // useless ascription because of compiler bug
+    asJava.toIterable.asScala.toList: List[T] // useless ascription because of compiler bug
   }
 
 }

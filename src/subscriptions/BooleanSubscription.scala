@@ -33,6 +33,6 @@ class BooleanSubscription private[scala] (val asJavaSubscription: rx.subscriptio
   /**
    * Checks whether the subscription has been unsubscribed.
    */
-  def isUnsubscribed: Boolean = asJavaSubscription.isUnsubscribed()
+  def isUnsubscribed: Boolean = asJavaSubscription.isUnsubscribed
 
 }
