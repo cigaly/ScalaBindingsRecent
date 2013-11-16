@@ -17,6 +17,13 @@ object CompositeSubscription {
   def apply(): CompositeSubscription = {
     new CompositeSubscription(new rx.subscriptions.CompositeSubscription())
   }
+
+  /**
+   * Creates a [[rx.lang.scala.subscriptions.CompositeSubscription]].
+   */
+  def apply(subscription: rx.subscriptions.CompositeSubscription): CompositeSubscription = {
+    new CompositeSubscription(subscription)
+  }
 }
 
 /**

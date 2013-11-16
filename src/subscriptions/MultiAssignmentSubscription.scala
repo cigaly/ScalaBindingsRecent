@@ -2,22 +2,22 @@ package rx.lang.scala.subscriptions
 
 import rx.lang.scala._
 
-object MultiAssignmentSubscription {
+object MultipleAssignmentSubscription {
 
   /**
-   * Creates a [[rx.lang.scala.subscriptions.MultiAssignmentSubscription]] that invokes the specified action when unsubscribed.
+   * Creates a [[rx.lang.scala.subscriptions.MultipleAssignmentSubscription]] that invokes the specified action when unsubscribed.
    */
-  def apply(subscription: => Unit): MultiAssignmentSubscription = {
-    val m = MultiAssignmentSubscription()
+  def apply(subscription: => Unit): MultipleAssignmentSubscription = {
+    val m = MultipleAssignmentSubscription()
     m.subscription = Subscription{ subscription }
     m
   }
 
   /**
-   * Creates a [[rx.lang.scala.subscriptions.MultiAssignmentSubscription]].
+   * Creates a [[rx.lang.scala.subscriptions.MultipleAssignmentSubscription]].
    */
-  def apply(): MultiAssignmentSubscription = {
-    new MultiAssignmentSubscription(new rx.subscriptions.MultipleAssignmentSubscription())
+  def apply(): MultipleAssignmentSubscription = {
+    new MultipleAssignmentSubscription(new rx.subscriptions.MultipleAssignmentSubscription())
   }
 }
 
@@ -26,7 +26,7 @@ object MultiAssignmentSubscription {
 /**
  * Represents a [[rx.lang.scala.subscriptions.Subscription]] whose underlying subscription can be swapped for another subscription.
  */
-class MultiAssignmentSubscription private[scala] (val asJavaSubscription: rx.subscriptions.MultipleAssignmentSubscription)
+class MultipleAssignmentSubscription private[scala] (val asJavaSubscription: rx.subscriptions.MultipleAssignmentSubscription)
   extends Subscription {
 
   /**
@@ -37,7 +37,7 @@ class MultiAssignmentSubscription private[scala] (val asJavaSubscription: rx.sub
   /**
    * Gets the underlying subscription
    * @param that the new subscription
-   * @return the [[rx.lang.scala.subscriptions.MultiAssignmentSubscription]] itself.
+   * @return the [[rx.lang.scala.subscriptions.MultipleAssignmentSubscription]] itself.
    */
   def subscription_=(that: Subscription): this.type = {
     asJavaSubscription.setSubscription(that.asJavaSubscription)

@@ -28,6 +28,7 @@ package rx.lang.scala {
 package rx.lang.scala.subscriptions {
 
 import rx.lang.scala.Subscription
+import java.util.concurrent.atomic.AtomicBoolean
 
 
 object Subscription {
@@ -36,29 +37,30 @@ object Subscription {
    * Creates an [[rx.lang.scala.Subscription]] from an[[rx.Subscription]].
    */
   def apply(subscription: rx.Subscription): Subscription = {
-     Subscription {
-      subscription.unsubscribe()
-    }
+     subscription match {
+       case x: rx.subscriptions.BooleanSubscription => new BooleanSubscription(x)
+       case x: rx.subscriptions.CompositeSubscription => new CompositeSubscription(x)
+       case x: rx.subscriptions.MultipleAssignmentSubscription => new MultipleAssignmentSubscription(x)
+       case x: rx.subscriptions.SerialSubscription => new SerialSubscription(x)
+       case x: rx.Subscription => Subscription { x.unsubscribe() }
+     }
   }
 
   /**
    * Creates an [[rx.lang.scala.Subscription]] that invokes the specified action when unsubscribed.
    */
-  def apply(u: => Unit): rx.lang.scala.Subscription  = {
+  def apply(u: => Unit): Subscription  = {
     new Subscription () {
 
-      def isUnsubscribed = asJavaSubscription.isUnsubscribed
+      private val _isUnsubscribed = new AtomicBoolean(false)
+      def isUnsubscribed = _isUnsubscribed.get()
 
-      val asJavaSubscription = new rx.subscriptions.BooleanSubscription() {
-        override def unsubscribe() {
-          u
-          super.unsubscribe()
-        }
+      val asJavaSubscription = new rx.Subscription {
+        def unsubscribe() { u; _isUnsubscribed.set(true) }
       }
     }
   }
-
-}
+ }
 }
 
 
