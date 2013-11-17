@@ -44,7 +44,7 @@
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/util/functions/Func1.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationFilter.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationScan.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
-    <file path="/Dummy.txt" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384667518852" ignored="false" />
+    <file path="/Dummy.txt" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384667766345" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Main.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384633053101" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Coin.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278743929" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Treasure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278788253" ignored="false" />
@@ -204,7 +204,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="63" selection-start="5912" selection-end="5912" vertical-scroll-proportion="0.6440678">
+            <state line="133" column="0" selection-start="6038" selection-end="6038" vertical-scroll-proportion="0.7457627">
               <folding />
             </state>
           </provider>
@@ -739,7 +739,11 @@
       <created>1384667535179</created>
       <updated>1384667535179</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Updated README">
+      <created>1384667773257</created>
+      <updated>1384667773257</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -811,7 +815,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplified interop example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -847,6 +851,7 @@
     <MESSAGE value="Added interop example" />
     <MESSAGE value="Add another orphan file" />
     <MESSAGE value="Simplified interop example" />
+    <MESSAGE value="Updated README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -968,7 +973,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="63" selection-start="5912" selection-end="5912" vertical-scroll-proportion="0.6440678">
+        <state line="133" column="0" selection-start="6038" selection-end="6038" vertical-scroll-proportion="0.7457627">
           <folding />
         </state>
       </provider>
