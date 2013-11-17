@@ -8,7 +8,8 @@ an `Observable[Movie]` that is transformed using RxScala operators:
 class MovieLib(val moviesStream: Observable[Movie]) {
    val threshold = 1200
    def shortMovies: Observable[Movie] = ???
-   def longMovies: Observable[Movie] = ???}
+   def longMovies: Observable[Movie] = ???
+}
 ```
 which is then called in Java, passing a Java `Observable<Movie>` to the constructor
 ```java
