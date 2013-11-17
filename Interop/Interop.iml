@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="ScalaBindingsRecent" level="project" />
+    <orderEntry type="library" name="ScalaBindings" level="project" />
   </component>
 </module>
 
