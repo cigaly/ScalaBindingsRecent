@@ -124,11 +124,14 @@ You pay the price when crossing the Scala/Java interop boundary, which is where 
 The proper way is to put the burden of interop on the Scala side, in case you want to create
 a reusable Rx-based library in Scala, or wrap and unwrap on the Java side.
 ```java
-public void test() {
-   MovieLib lib = new MovieLib(toScala(Observable.from(...)));
+public static void main(String[] args) {
 
-   lib.longMovies().asJavaObservable().subscribe(moviePrinter);
-}
+        Observable<Movie> movies = Observable.from(new Movie(3000), new Movie(1000), new Movie(2000));
+        MovieLib lib = new MovieLib(toScalaObservable(movies));
+        lib.longMovies().asJavaObservable().subscribe(m ->
+                System.out.println("A movie of length " + m.lengthInSeconds() + "s")
+        );
+    }
 ```
 Delegation versus Inheritance
 -----------------------------
