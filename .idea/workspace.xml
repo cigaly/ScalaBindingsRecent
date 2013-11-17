@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2783c6d2-7f66-4976-beae-2ac6d06e21ba" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Interop/src/Main.java" afterPath="$PROJECT_DIR$/Interop/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ScalaBindingsRecent.iws" />
@@ -43,19 +44,19 @@
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/util/functions/Func1.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationFilter.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationScan.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
-    <file path="/Dummy.txt" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384640682253" ignored="false" />
+    <file path="/Dummy.txt" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384665945370" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Main.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384633053101" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Coin.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278743929" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Treasure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278788253" ignored="false" />
-    <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Extensions.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384362656282" ignored="false" />
+    <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Extensions.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384665304258" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/GameOver.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278829146" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Adventure/Adventure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384279339745" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Adventure/GameOver.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278927899" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Adventure/Treasure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278942373" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Adventure/Coin.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278957851" ignored="false" />
-    <file path="/Adventure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384362806093" ignored="false" />
+    <file path="/Adventure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384647981946" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Adventure/Safe/SafeAdventure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384362827452" ignored="false" />
-    <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Adventure/Unsafe/Adventure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384362806493" ignored="false" />
+    <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Adventure/Unsafe/Adventure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384647999203" ignored="false" />
     <file path="/SafeAdventure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384362827019" ignored="false" />
     <file path="$PROJECT_DIR$/../FireBase/lib/firebase-client-1.0.9.jar!/com/firebase/client/core/Repo.class" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384281699523" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/language-adaptors/rxjava-scala/build.gradle" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384583156007" ignored="false" />
@@ -63,14 +64,14 @@
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-contrib/rxjava-apache-http/src/main/java/rx/apache/http/ObservableHttp.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384283122804" ignored="false" />
     <file path="$PROJECT_DIR$/../WikipediaSuggest/WikipediaSuggest/src/observablex/Scheduler.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384302560739" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Socket/package.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384357736961" ignored="false" />
-    <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Socket/Safe/Socket.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384365507997" ignored="false" />
+    <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Socket/Safe/Socket.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384654369877" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Socket/Socket.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384358022509" ignored="false" />
-    <file path="/Socket.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384365507997" ignored="false" />
+    <file path="/Socket.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384654369877" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Socket/Unsafe/Socket.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384362926254" ignored="false" />
-    <file path="/Extensions.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384360850441" ignored="false" />
+    <file path="/Extensions.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384660466463" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/CourseraCodeSamplesReactiveProgramming.iml" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384364237186" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Socket/EmailMessage.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384364912919" ignored="false" />
-    <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Combinators/Combinators.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384365412831" ignored="false" />
+    <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Combinators/Combinators.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384665414491" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/language-adaptors/rxjava-scala/src/main/scala/rx/lang/scala/Notification.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384403633928" ignored="false" />
     <file path="/Notification.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384403621509" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/language-adaptors/rxjava-scala/src/main/scala/rx/lang/scala/Observable.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384546437184" ignored="false" />
@@ -99,11 +100,15 @@
     <file path="$USER_HOME$/.gradle/caches/artifacts-24/filestore/junit/junit-dep/4.10/source/2c7dad0a5eb1602c6fe6b43abec8ea35805b3ae4/junit-dep-4.10-sources.jar!/org/junit/Assert.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384581595923" ignored="false" />
     <file path="/RxJavaDemos.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384633565145" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/language-adaptors/rxjava-scala/src/examples/scala/rx/lang/scala/examples/RxScalaDemo.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384582998930" ignored="false" />
-    <file path="/README.md" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384625590808" ignored="false" />
+    <file path="/README.md" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384665927734" ignored="false" />
     <file path="/MovieLibUsage.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384628234655" ignored="false" />
     <file path="$PROJECT_DIR$/../Movies/src/Main.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384628898088" ignored="false" />
     <file path="/a.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384633698727" ignored="false" />
-    <file path="/Main.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384640438634" ignored="false" />
+    <file path="/Main.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384666595904" ignored="false" />
+    <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Socket/Safe/Http.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384646397530" ignored="false" />
+    <file path="/Http.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384645488205" ignored="false" />
+    <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/README.md" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384665940138" ignored="false" />
+    <file path="/Combinators.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384665413764" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +190,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Interop/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="41" selection-start="391" selection-end="391" vertical-scroll-proportion="0.31502423">
+            <state line="7" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.16962843">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -719,12 +724,16 @@
       <created>1384640690494</created>
       <updated>1384640690494</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Add another orphan file">
+      <created>1384644614350</created>
+      <updated>1384644614350</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="22" width="1920" height="1178" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -740,8 +749,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11145833" sideWeight="0.5974146" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40258542" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11145833" sideWeight="0.5974146" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40258542" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33271548" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -791,7 +800,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added interop example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add another orphan file" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -825,6 +834,7 @@
     <MESSAGE value="Added orphan files" />
     <MESSAGE value="Added more orphan files" />
     <MESSAGE value="Added interop example" />
+    <MESSAGE value="Add another orphan file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -937,7 +947,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Interop/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="41" selection-start="391" selection-end="391" vertical-scroll-proportion="0.31502423">
+        <state line="7" column="0" selection-start="211" selection-end="211" vertical-scroll-proportion="0.16962843">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
