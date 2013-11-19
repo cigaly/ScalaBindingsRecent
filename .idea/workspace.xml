@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2783c6d2-7f66-4976-beae-2ac6d06e21ba" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Observer.scala" afterPath="$PROJECT_DIR$/src/Observer.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ScalaBindingsRecent.iws" />
@@ -13,7 +14,7 @@
     <file path="/package.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384441902871" ignored="false" />
     <file path="/Observable.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384666965299" ignored="false" />
     <file path="/fragment.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384640587134" ignored="false" />
-    <file path="/Observer.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384565785061" ignored="false" />
+    <file path="/Observer.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384834814802" ignored="false" />
     <file path="/AsyncSubject.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384528761633" ignored="false" />
     <file path="/ReplaySubject.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384567631527" ignored="false" />
     <file path="/BehaviorSubject.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384567605400" ignored="false" />
@@ -43,7 +44,7 @@
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/util/functions/Func1.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationFilter.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationScan.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
-    <file path="/Dummy.txt" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384667922059" ignored="false" />
+    <file path="/Dummy.txt" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384721764721" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Main.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384633053101" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Coin.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278743929" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Treasure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278788253" ignored="false" />
@@ -189,7 +190,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interop/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="7" selection-start="201" selection-end="630" vertical-scroll-proportion="0.0">
+            <state line="10" column="22" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,14 +198,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Schedulers.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/concurrency/Schedulers.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="7" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsyncSubject.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/subjects/AsyncSubject.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="37" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observer.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Observer.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="32" selection-start="911" selection-end="911" vertical-scroll-proportion="0.6666667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="46" selection-start="562" selection-end="562" vertical-scroll-proportion="0.33050847">
+            <state line="13" column="46" selection-start="562" selection-end="562" vertical-scroll-proportion="-7.2222223">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/rxjava-core-0.14.11-sources.jar!/rx/Observer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="19" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,46 +257,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnitTestSuite.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/UnitTestSuite.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="31" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ImplicitFunctionConversions.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ImplicitFunctionConversions.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state line="48" column="39" selection-start="1995" selection-end="1995" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modules.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profiles_settings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="42" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SubscriptionTests.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/SubscriptionTests.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="36" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -287,7 +290,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/Scheduler.scala" />
-        <option value="$PROJECT_DIR$/src/Observer.scala" />
         <option value="$PROJECT_DIR$/tests/examples/MovieUse.java" />
         <option value="$PROJECT_DIR$/tests/examples/MovieLib.scala" />
         <option value="$PROJECT_DIR$/Interop/src/MovieLibUsage.java" />
@@ -302,6 +304,7 @@
         <option value="$PROJECT_DIR$/src/Observable.scala" />
         <option value="$PROJECT_DIR$/Interop/src/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/Observer.scala" />
       </list>
     </option>
   </component>
@@ -313,10 +316,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1174" />
+    <option name="height" value="614" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -365,6 +367,106 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Observer.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concurrency" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Interop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -750,11 +852,15 @@
       <created>1384667927171</created>
       <updated>1384667927177</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Updated README">
+      <created>1384721767458</created>
+      <updated>1384721767458</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="22" width="1920" height="1174" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="614" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -763,7 +869,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40222427" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4258189" sideWeight="0.5864583" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.289012" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -771,8 +877,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11145833" sideWeight="0.5977757" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40222427" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14895834" sideWeight="0.57418114" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4258189" sideWeight="0.41354167" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33271548" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -868,34 +974,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/examples/Olympics.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="705" selection-end="705" vertical-scroll-proportion="0.101626016">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/examples/MovieLib.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="602" selection-end="602" vertical-scroll-proportion="0.30487806">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/subscriptions/BooleanSubscription.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="50" selection-start="982" selection-end="982" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/RxJavaDemos.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="438" column="51" selection-start="15553" selection-end="15553" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScalaBindingsRecent.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -966,21 +1044,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="46" selection-start="562" selection-end="562" vertical-scroll-proportion="-7.2222223">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/rxjava-core-0.14.11-sources.jar!/rx/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="19" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Interop/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="7" selection-start="201" selection-end="630" vertical-scroll-proportion="0.0">
+        <state line="10" column="22" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/concurrency/Schedulers.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="562" selection-end="562" vertical-scroll-proportion="0.33050847">
+        <state line="10" column="7" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/subjects/AsyncSubject.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="37" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Observer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="32" selection-start="911" selection-end="911" vertical-scroll-proportion="0.6666667">
           <folding />
         </state>
       </provider>
