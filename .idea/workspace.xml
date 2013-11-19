@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2783c6d2-7f66-4976-beae-2ac6d06e21ba" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Observer.scala" afterPath="$PROJECT_DIR$/src/Observer.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/subscriptions/Subscription.scala" afterPath="$PROJECT_DIR$/src/subscriptions/Subscription.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ScalaBindingsRecent.iws" />
@@ -25,7 +25,7 @@
     <file path="$PROJECT_DIR$/src/rx/lang/scala/subscriptions/CompositeSubscription.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384110008744" ignored="false" />
     <file path="/scala.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384565638132" ignored="false" />
     <file path="/BooleanSubscription.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384632960993" ignored="false" />
-    <file path="/Subscription.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384579693016" ignored="false" />
+    <file path="/Subscription.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384835233281" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationOnErrorResumeNextViaFunction.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/util/functions/Func2.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationMergeDelayError.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
@@ -44,7 +44,7 @@
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/util/functions/Func1.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationFilter.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
     <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationScan.java" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384113481240" ignored="false" />
-    <file path="/Dummy.txt" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384721764721" ignored="false" />
+    <file path="/Dummy.txt" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384835096168" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Main.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384633053101" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Coin.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278743929" ignored="false" />
     <file path="$PROJECT_DIR$/../CourseraCodeSamplesReactiveProgramming/src/Coursera/Treasure.scala" changelist="2783c6d2-7f66-4976-beae-2ac6d06e21ba" time="1384278788253" ignored="false" />
@@ -169,19 +169,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.scala">
+      <file leaf-file-name="Observable.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Observable.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="10" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
+            <state line="107" column="0" selection-start="4136" selection-end="4136" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Observable.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Observable.scala">
+      <file leaf-file-name="BooleanSubscription.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/subscriptions/BooleanSubscription.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="0" selection-start="4136" selection-end="4136" vertical-scroll-proportion="0.0">
+            <state line="4" column="7" selection-start="68" selection-end="68" vertical-scroll-proportion="0.22222222">
               <folding />
             </state>
           </provider>
@@ -216,11 +216,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Observer.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Observer.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Observer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="32" selection-start="911" selection-end="911" vertical-scroll-proportion="0.6666667">
-              <folding />
+            <state line="22" column="2" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#455#698#0" expanded="false" />
+                <element signature="e#771#997#0" expanded="false" />
+                <element signature="e#1071#1284#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Subscription.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/subscriptions/Subscription.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="49" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#1236#1269#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -257,15 +272,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImplicitFunctionConversions.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ImplicitFunctionConversions.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="39" selection-start="1995" selection-end="1995" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -289,7 +295,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Scheduler.scala" />
         <option value="$PROJECT_DIR$/tests/examples/MovieUse.java" />
         <option value="$PROJECT_DIR$/tests/examples/MovieLib.scala" />
         <option value="$PROJECT_DIR$/Interop/src/MovieLibUsage.java" />
@@ -305,6 +310,7 @@
         <option value="$PROJECT_DIR$/Interop/src/Main.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Observer.scala" />
+        <option value="$PROJECT_DIR$/src/subscriptions/Subscription.scala" />
       </list>
     </option>
   </component>
@@ -399,6 +405,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Observer.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subscriptions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaBindingsRecent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subscriptions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BooleanSubscription.scala" />
               <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -856,7 +902,11 @@
       <created>1384721767458</created>
       <updated>1384721767458</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Doc comments for Observer">
+      <created>1384835100275</created>
+      <updated>1384835100275</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -928,7 +978,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Doc comments for Observer" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -965,6 +1015,7 @@
     <MESSAGE value="Add another orphan file" />
     <MESSAGE value="Simplified interop example" />
     <MESSAGE value="Updated README" />
+    <MESSAGE value="Doc comments for Observer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -974,20 +1025,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ScalaBindingsRecent.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/copyright/profiles_settings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="42" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
@@ -1088,7 +1125,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Observer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="32" selection-start="911" selection-end="911" vertical-scroll-proportion="0.6666667">
+        <state line="22" column="2" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#455#698#0" expanded="false" />
+            <element signature="e#771#997#0" expanded="false" />
+            <element signature="e#1071#1284#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/subscriptions/Subscription.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="49" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1236#1269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/subscriptions/BooleanSubscription.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="7" selection-start="68" selection-end="68" vertical-scroll-proportion="0.22222222">
           <folding />
         </state>
       </provider>

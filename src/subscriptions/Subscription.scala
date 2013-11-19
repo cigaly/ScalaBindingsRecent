@@ -16,11 +16,24 @@
 
 package rx.lang.scala {
 
+ /**
+ * Subscriptions are returned from all `Observable.subscribe` methods to allow unsubscribing.
+ *
+ * This interface is the equivalent of `IDisposable` in the .NET Rx implementation.
+ */
   trait Subscription {
 
     val asJavaSubscription: rx.Subscription
 
+   /**
+    * Call this method to stop receiving notifications on the Observer that was registered when
+    * this Subscription was received.
+    */
     def unsubscribe(): Unit = asJavaSubscription.unsubscribe()
+
+   /**
+    * Checks if the subscription is unsubscribed.
+    */
     def isUnsubscribed: Boolean
   }
 }
